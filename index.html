@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+   <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main-container">
+    <!-- Left Navigation -->
+    <nav class="side-nav">
+      <h2>Menu</h2>
+      <a href="#fullstack">💻 Full Stack</a>
+      <a href="#html">🌐 HTML</a>
+      <a href="#css">🎨 CSS</a>
+      <a href="#bootstrap">🛠️ Bootstrap</a>
+      <a href="#javascript">⚡ JavaScript</a>
+    </nav>
+
+    <!-- Right Content -->
+    <div class="content">
+      <!-- Header -->
+      <header>
+        <h1>My Portfolio</h1>
+        <p>I'm Anisha KC | Learning Web Development</p>
+      </header>
+
+      <div class="container f-pattern">
+
+        <!-- Full Stack Section -->
+        <section id="fullstack">
+          <h2>💻 What is Full Stack Development?</h2>
+          <p>
+            Full stack development is basically about building a complete website or web application. It means a developer can handle both the parts you see and use (front-end) and the part you don't see, like servers and databases (back-end). The front-end is everything on the screen like layout, buttons, colors, and how you interact with the site by using tools like html, CSS, and JavaScript. The back-end is like the engine that makes the site work behind the scenes like storing data, managing users, and running the logic by using things like databases and server code. Therefore, a full stack developer can handle both, connecting them so the website works smoothly. In simple words, it’s like being able to both design a house so it looks nice and also build all the plumbing and electricity inside so it works perfectly.
+          </p>
+        </section>
+  
+        <!-- HTML Section with live preview -->
+        <section id="html">
+          <h2>🌐 HTML</h2>
+          <p>
+            HTML it stands for <strong>HyperText Markup Language </strong>which is the basic building block of every website. HTML is the skeleton of a webpage — it gives structure and meaning to all the content you see on the internet. With HTML, you tell the browser what each piece of content is: headings, paragraphs, images, links, lists, tables, and so on. For example, if you want to show a title on a page, you use a heading tag; if you want to add a paragraph, you use a paragraph tag. HTML doesn’t make things look fancy or interactive — it just organizes and labels content so that browsers understand it. You can also add attributes to HTML elements to give extra information, like adding a link’s destination or an image’s description. In short, HTML is like the foundation and structure of a house: it defines rooms, doors, and walls, while CSS and JavaScript come later to decorate it and make it lively. Without HTML, a webpage wouldn’t exist; it’s the starting point for everything on the web. Example:
+          </p>
+          <pre>
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;li&gt;About&lt;/li&gt;&lt;li&gt;Contact&lt;/li&gt;&lt;/ul&gt;
+          </pre>
+          <p>Live Preview:</p>
+          <div class="live-preview">
+            <h1>Hello World</h1>
+            <p>This is a paragraph.</p>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- CSS Section with live preview -->
+        <section id="css">
+          <h2>🎨 CSS</h2>
+          <p>
+           >CSS it stands for <strong>Cascading Style Sheets</strong>, is what makes a website look nice and attractive. If HTML is the skeleton or structure of a webpage, CSS is like the paint, furniture, and decoration that make the house beautiful and comfortable. CSS lets you control colors, fonts, sizes, spacing, backgrounds, borders, and even animations on a webpage. For example, you can use CSS to make headings bold and blue, paragraphs easier to read, buttons change color when you hover over them, or images appear in a circle instead of a square. It works by selecting the HTML elements and applying styles to them, giving designers full control over how everything appears on the screen. Without CSS, websites would look plain, boring, and all text-heavy, because HTML alone only organizes content. In simple words, CSS is what brings life and style to a website, turning a plain structure into something visually appealing and enjoyable to use. Example:
+          </p>
+          <pre>
+h1 { color: #26a69a; text-align: center; }
+p { font-size: 18px; line-height: 1.5; }
+ul { list-style: none; padding: 0; }
+ul li { padding: 5px 0; }
+          </pre>
+          <p>Live Preview:</p>
+          <div class="live-preview" style="background-color:#f0fff9; padding:10px;">
+            <h1 style="color:#26a69a; text-align:center;">Hello World</h1>
+            <p style="font-size:18px; line-height:1.5;">This is a paragraph.</p>
+            <ul style="list-style:none; padding:0;">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Bootstrap Section -->
+        <section id="bootstrap">
+          <h2>🛠️ Bootstrap Framework</h2>
+          <p>
+            Bootstrap is a tool that helps you make websites faster and easier. It gives you ready-made designs for buttons, menus, forms, and layouts so you don’t have to start from scratch. It also makes sure your website looks good on phones, tablets, and computers automatically. In simple words, Bootstrap is like using pre-made building blocks to quickly build a nice and working website. Example (conceptual):
+          </p>
+          <pre>
+           <!-- Progress Bar Example -->
+<h3>📊 Progress Bar</h3>
+<pre>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar" style="width:0%"&gt;0%&lt;/div&gt;
+&lt;/div&gt;
+&lt;button onclick="increaseProgress()" class="btn btn-primary mt-2"&gt;Increase Progress&lt;/button&gt;
+&lt;button onclick="resetProgress()" class="btn btn-danger mt-2"&gt;Reset&lt;/button&gt;
+</pre>
+
+<p>Live Preview:</p>
+<div class="progress" style="height:20px;">
+  <div id="myProgressBar" class="progress-bar bg-info" style="width:0%">0%</div>
+</div>
+<button onclick="increaseProgress()" class="btn btn-primary mt-2">Increase Progress</button>
+<button onclick="resetProgress()" class="btn btn-danger mt-2">Reset</button>
+
+        </section>
+        
+
+        <!-- JavaScript Section with live preview -->
+        <section id="javascript">
+          <h2>⚡ JavaScript </h2>
+          <p>
+            JavaScript is a programming language that makes websites interactive and alive. If HTML is the structure of a house and CSS is the decoration, JavaScript is like the electricity, moving parts, and gadgets that make the house work. It lets you do things like make buttons clickable, show or hide content, create image sliders, validate forms, play sounds, or even build games on a website. Without JavaScript, websites would be static — you could only read text and see images, but nothing would respond to your actions. In simple words, JavaScript is what makes a website do things when you click, type, or scroll, turning a plain webpage into an interactive experience. Example:
+          </p>
+          <pre>
+function toggleText() {
+  const text = document.getElementById('jsText');
+  if (text.style.display === 'none') { text.style.display = 'block'; }
+  else { text.style.display = 'none'; }
+}
+          </pre>
+          <p>Live Preview:</p>
+          <button class="btn" onclick="toggleText()">Click Me</button>
+          <p id="jsText">Hello, this is JavaScript!</p>
+        </section>
+
+      </div>
+
+      <footer>
+        <p>Turning ideas into interactive experiences</p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to Top">⬆️</button>
+
+   <!-- Bootstrap JS (needed for navbar, alerts, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
